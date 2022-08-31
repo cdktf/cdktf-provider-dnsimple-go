@@ -472,6 +472,9 @@ func (j *jsiiProxy_LetsEncryptCertificate) Years() *float64 {
 func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) LetsEncryptCertificate {
 	_init_.Initialize()
 
+	if err := validateNewLetsEncryptCertificateParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LetsEncryptCertificate{}
 
 	_jsii_.Create(
@@ -494,7 +497,10 @@ func NewLetsEncryptCertificate_Override(l LetsEncryptCertificate, scope construc
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetAutoRenew(val interface{}) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetAutoRenew(val interface{}) {
+	if err := j.validateSetAutoRenewParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoRenew",
@@ -502,7 +508,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetAutoRenew(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetConnection(val interface{}) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -510,7 +519,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetContactId(val *float64) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetContactId(val *float64) {
+	if err := j.validateSetContactIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contactId",
@@ -518,7 +530,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetContactId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetCount(val *float64) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -526,7 +538,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -534,7 +546,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetDomainId(val *string) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetDomainId(val *string) {
+	if err := j.validateSetDomainIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"domainId",
@@ -542,7 +557,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetDomainId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +565,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -558,7 +576,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetName(val *string) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -566,7 +587,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -574,7 +595,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -602,6 +626,9 @@ func (j *jsiiProxy_LetsEncryptCertificate) SetProvisioners(val *[]interface{}) {
 func LetsEncryptCertificate_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLetsEncryptCertificate_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -626,6 +653,9 @@ func LetsEncryptCertificate_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -634,6 +664,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) AddOverride(path *string, value inter
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -647,6 +680,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetAnyMapAttribute(terraformAttribute
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -660,6 +696,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetBooleanAttribute(terraformAttribut
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := l.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -673,6 +712,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetBooleanMapAttribute(terraformAttri
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := l.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -686,6 +728,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetListAttribute(terraformAttribute *
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := l.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -699,6 +744,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetNumberAttribute(terraformAttribute
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := l.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -712,6 +760,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetNumberListAttribute(terraformAttri
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := l.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -725,6 +776,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetNumberMapAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetStringAttribute(terraformAttribute *string) *string {
+	if err := l.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -738,6 +792,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetStringAttribute(terraformAttribute
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := l.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -751,6 +808,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) GetStringMapAttribute(terraformAttrib
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -764,6 +824,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) InterpolationForAttribute(terraformAt
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
@@ -772,6 +835,9 @@ func (l *jsiiProxy_LetsEncryptCertificate) OverrideLogicalId(newLogicalId *strin
 }
 
 func (l *jsiiProxy_LetsEncryptCertificate) PutTimeouts(value *LetsEncryptCertificateTimeouts) {
+	if err := l.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",

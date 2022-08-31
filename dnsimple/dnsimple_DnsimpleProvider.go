@@ -303,6 +303,9 @@ func (j *jsiiProxy_DnsimpleProvider) UserAgentInput() *string {
 func NewDnsimpleProvider(scope constructs.Construct, id *string, config *DnsimpleProviderConfig) DnsimpleProvider {
 	_init_.Initialize()
 
+	if err := validateNewDnsimpleProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DnsimpleProvider{}
 
 	_jsii_.Create(
@@ -325,7 +328,7 @@ func NewDnsimpleProvider_Override(d DnsimpleProvider, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetAccount(val *string) {
+func (j *jsiiProxy_DnsimpleProvider)SetAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"account",
@@ -333,7 +336,7 @@ func (j *jsiiProxy_DnsimpleProvider) SetAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetAlias(val *string) {
+func (j *jsiiProxy_DnsimpleProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -341,7 +344,10 @@ func (j *jsiiProxy_DnsimpleProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetPrefetch(val interface{}) {
+func (j *jsiiProxy_DnsimpleProvider)SetPrefetch(val interface{}) {
+	if err := j.validateSetPrefetchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"prefetch",
@@ -349,7 +355,10 @@ func (j *jsiiProxy_DnsimpleProvider) SetPrefetch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetSandbox(val interface{}) {
+func (j *jsiiProxy_DnsimpleProvider)SetSandbox(val interface{}) {
+	if err := j.validateSetSandboxParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sandbox",
@@ -357,7 +366,7 @@ func (j *jsiiProxy_DnsimpleProvider) SetSandbox(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetToken(val *string) {
+func (j *jsiiProxy_DnsimpleProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -365,7 +374,7 @@ func (j *jsiiProxy_DnsimpleProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsimpleProvider) SetUserAgent(val *string) {
+func (j *jsiiProxy_DnsimpleProvider)SetUserAgent(val *string) {
 	_jsii_.Set(
 		j,
 		"userAgent",
@@ -393,6 +402,9 @@ func (j *jsiiProxy_DnsimpleProvider) SetUserAgent(val *string) {
 func DnsimpleProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDnsimpleProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -417,6 +429,9 @@ func DnsimpleProvider_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DnsimpleProvider) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -425,6 +440,9 @@ func (d *jsiiProxy_DnsimpleProvider) AddOverride(path *string, value interface{}
 }
 
 func (d *jsiiProxy_DnsimpleProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
