@@ -36,9 +36,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-dnsimple-go`](https://github.com/hashicorp/cdktf-provider-dnsimple-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-dnsimple-go`](https://github.com/cdktf/cdktf-provider-dnsimple-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-dnsimple-go/dnsimple`
+`go get github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple`
 
 ## Docs
 

@@ -2,10 +2,10 @@ package emailforward
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-dnsimple-go/dnsimple/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/cdktf-provider-dnsimple-go/dnsimple/emailforward/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
