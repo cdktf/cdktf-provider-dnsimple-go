@@ -2,10 +2,10 @@ package emailforward
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/emailforward/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/emailforward/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -532,6 +532,44 @@ func EmailForward_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dnsimple.emailForward.EmailForward",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmailForward_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmailForward_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dnsimple.emailForward.EmailForward",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmailForward_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmailForward_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dnsimple.emailForward.EmailForward",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

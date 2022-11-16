@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package emailforward
 
@@ -54,6 +53,14 @@ func (e *jsiiProxy_EmailForward) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateEmailForward_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmailForward_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmailForward_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

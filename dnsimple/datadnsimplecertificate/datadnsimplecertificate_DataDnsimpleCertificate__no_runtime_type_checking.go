@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datadnsimplecertificate
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataDnsimpleCertificate) validateOverrideLogicalIdParameters(
 }
 
 func validateDataDnsimpleCertificate_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDnsimpleCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataDnsimpleCertificate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

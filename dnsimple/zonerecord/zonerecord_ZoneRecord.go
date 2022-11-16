@@ -2,10 +2,10 @@ package zonerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/zonerecord/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/zonerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -647,6 +647,44 @@ func ZoneRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-dnsimple.zoneRecord.ZoneRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ZoneRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateZoneRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dnsimple.zoneRecord.ZoneRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ZoneRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateZoneRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-dnsimple.zoneRecord.ZoneRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
