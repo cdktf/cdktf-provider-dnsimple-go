@@ -106,6 +106,7 @@ type LetsEncryptCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *LetsEncryptCertificateTimeouts)
+	ResetContactId()
 	ResetDomainId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -879,6 +880,14 @@ func (l *jsiiProxy_LetsEncryptCertificate) PutTimeouts(value *LetsEncryptCertifi
 		l,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LetsEncryptCertificate) ResetContactId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetContactId",
+		nil, // no parameters
 	)
 }
 
