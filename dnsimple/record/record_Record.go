@@ -2,10 +2,10 @@ package record
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/record/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/record/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

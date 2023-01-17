@@ -2,9 +2,9 @@ package letsencryptcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
 
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v2/letsencryptcertificate/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/letsencryptcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
