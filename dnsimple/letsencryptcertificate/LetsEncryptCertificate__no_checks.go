@@ -96,6 +96,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LetsEncryptCertificate) validateSetSignatureAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func validateNewLetsEncryptCertificateParameters(scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) error {
 	return nil
 }

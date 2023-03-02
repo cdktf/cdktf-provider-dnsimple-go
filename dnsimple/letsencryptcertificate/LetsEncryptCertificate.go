@@ -69,6 +69,9 @@ type LetsEncryptCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SignatureAlgorithm() *string
+	SetSignatureAlgorithm(val *string)
+	SignatureAlgorithmInput() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -111,6 +114,7 @@ type LetsEncryptCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSignatureAlgorithm()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -387,6 +391,26 @@ func (j *jsiiProxy_LetsEncryptCertificate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LetsEncryptCertificate) SignatureAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signatureAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LetsEncryptCertificate) SignatureAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signatureAlgorithmInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LetsEncryptCertificate) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -602,6 +626,17 @@ func (j *jsiiProxy_LetsEncryptCertificate)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LetsEncryptCertificate)SetSignatureAlgorithm(val *string) {
+	if err := j.validateSetSignatureAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signatureAlgorithm",
 		val,
 	)
 }
@@ -903,6 +938,14 @@ func (l *jsiiProxy_LetsEncryptCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LetsEncryptCertificate) ResetSignatureAlgorithm() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSignatureAlgorithm",
 		nil, // no parameters
 	)
 }
