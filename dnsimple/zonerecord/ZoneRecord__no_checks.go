@@ -68,10 +68,6 @@ func (j *jsiiProxy_ZoneRecord) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ZoneRecord) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ZoneRecord) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -80,7 +76,7 @@ func (j *jsiiProxy_ZoneRecord) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ZoneRecord) validateSetPriorityParameters(val *string) error {
+func (j *jsiiProxy_ZoneRecord) validateSetPriorityParameters(val *float64) error {
 	return nil
 }
 
@@ -88,7 +84,7 @@ func (j *jsiiProxy_ZoneRecord) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
-func (j *jsiiProxy_ZoneRecord) validateSetTtlParameters(val *string) error {
+func (j *jsiiProxy_ZoneRecord) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 

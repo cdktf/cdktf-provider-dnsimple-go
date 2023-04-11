@@ -27,14 +27,9 @@ type ZoneRecordConfig struct {
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#zone_name ZoneRecord#zone_name}.
 	ZoneName *string `field:"required" json:"zoneName" yaml:"zoneName"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#id ZoneRecord#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#priority ZoneRecord#priority}.
-	Priority *string `field:"optional" json:"priority" yaml:"priority"`
+	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dnsimple/r/zone_record#ttl ZoneRecord#ttl}.
-	Ttl *string `field:"optional" json:"ttl" yaml:"ttl"`
+	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
 

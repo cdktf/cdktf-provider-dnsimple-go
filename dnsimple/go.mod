@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3
+module github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4
 
 go 1.18
 

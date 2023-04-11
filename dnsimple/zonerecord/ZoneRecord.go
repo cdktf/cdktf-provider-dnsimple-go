@@ -2,10 +2,10 @@ package zonerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/zonerecord/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/zonerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,9 +36,7 @@ type ZoneRecord interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -48,9 +46,9 @@ type ZoneRecord interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Priority() *string
-	SetPriority(val *string)
-	PriorityInput() *string
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,9 +66,9 @@ type ZoneRecord interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Ttl() *string
-	SetTtl(val *string)
-	TtlInput() *string
+	Ttl() *float64
+	SetTtl(val *float64)
+	TtlInput() *float64
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -106,7 +104,6 @@ type ZoneRecord interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -207,21 +204,11 @@ func (j *jsiiProxy_ZoneRecord) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneRecord) Id() *string {
-	var returns *string
+func (j *jsiiProxy_ZoneRecord) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ZoneRecord) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -267,8 +254,8 @@ func (j *jsiiProxy_ZoneRecord) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneRecord) Priority() *string {
-	var returns *string
+func (j *jsiiProxy_ZoneRecord) Priority() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"priority",
@@ -277,8 +264,8 @@ func (j *jsiiProxy_ZoneRecord) Priority() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneRecord) PriorityInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZoneRecord) PriorityInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"priorityInput",
@@ -357,8 +344,8 @@ func (j *jsiiProxy_ZoneRecord) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneRecord) Ttl() *string {
-	var returns *string
+func (j *jsiiProxy_ZoneRecord) Ttl() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"ttl",
@@ -367,8 +354,8 @@ func (j *jsiiProxy_ZoneRecord) Ttl() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ZoneRecord) TtlInput() *string {
-	var returns *string
+func (j *jsiiProxy_ZoneRecord) TtlInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"ttlInput",
@@ -512,17 +499,6 @@ func (j *jsiiProxy_ZoneRecord)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ZoneRecord)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ZoneRecord)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -545,7 +521,7 @@ func (j *jsiiProxy_ZoneRecord)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ZoneRecord)SetPriority(val *string) {
+func (j *jsiiProxy_ZoneRecord)SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +551,7 @@ func (j *jsiiProxy_ZoneRecord)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ZoneRecord)SetTtl(val *string) {
+func (j *jsiiProxy_ZoneRecord)SetTtl(val *float64) {
 	if err := j.validateSetTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,14 +858,6 @@ func (z *jsiiProxy_ZoneRecord) OverrideLogicalId(newLogicalId *string) {
 		z,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (z *jsiiProxy_ZoneRecord) ResetId() {
-	_jsii_.InvokeVoid(
-		z,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

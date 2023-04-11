@@ -2,10 +2,10 @@ package letsencryptcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/letsencryptcertificate/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -24,9 +24,6 @@ type LetsEncryptCertificate interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ContactId() *float64
-	SetContactId(val *float64)
-	ContactIdInput() *float64
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -40,7 +37,7 @@ type LetsEncryptCertificate interface {
 	DomainId() *string
 	SetDomainId(val *string)
 	DomainIdInput() *string
-	ExpiresOn() *string
+	ExpiresAt() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,7 +46,7 @@ type LetsEncryptCertificate interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
+	Id() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -79,8 +76,6 @@ type LetsEncryptCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() LetsEncryptCertificateTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	UpdatedAt() *string
 	Years() *float64
 	// Experimental.
@@ -108,14 +103,10 @@ type LetsEncryptCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *LetsEncryptCertificateTimeouts)
-	ResetContactId()
-	ResetDomainId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSignatureAlgorithm()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -191,26 +182,6 @@ func (j *jsiiProxy_LetsEncryptCertificate) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) ContactId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"contactId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LetsEncryptCertificate) ContactIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"contactIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LetsEncryptCertificate) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -271,11 +242,11 @@ func (j *jsiiProxy_LetsEncryptCertificate) DomainIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) ExpiresOn() *string {
+func (j *jsiiProxy_LetsEncryptCertificate) ExpiresAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"expiresOn",
+		"expiresAt",
 		&returns,
 	)
 	return returns
@@ -311,8 +282,8 @@ func (j *jsiiProxy_LetsEncryptCertificate) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) Id() *string {
-	var returns *string
+func (j *jsiiProxy_LetsEncryptCertificate) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
@@ -451,26 +422,6 @@ func (j *jsiiProxy_LetsEncryptCertificate) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) Timeouts() LetsEncryptCertificateTimeoutsOutputReference {
-	var returns LetsEncryptCertificateTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LetsEncryptCertificate) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LetsEncryptCertificate) UpdatedAt() *string {
 	var returns *string
 	_jsii_.Get(
@@ -539,17 +490,6 @@ func (j *jsiiProxy_LetsEncryptCertificate)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LetsEncryptCertificate)SetContactId(val *float64) {
-	if err := j.validateSetContactIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"contactId",
 		val,
 	)
 }
@@ -907,33 +847,6 @@ func (l *jsiiProxy_LetsEncryptCertificate) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (l *jsiiProxy_LetsEncryptCertificate) PutTimeouts(value *LetsEncryptCertificateTimeouts) {
-	if err := l.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LetsEncryptCertificate) ResetContactId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetContactId",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LetsEncryptCertificate) ResetDomainId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetDomainId",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LetsEncryptCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -946,14 +859,6 @@ func (l *jsiiProxy_LetsEncryptCertificate) ResetSignatureAlgorithm() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSignatureAlgorithm",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LetsEncryptCertificate) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

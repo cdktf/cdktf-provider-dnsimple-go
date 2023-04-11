@@ -52,10 +52,6 @@ func (l *jsiiProxy_LetsEncryptCertificate) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (l *jsiiProxy_LetsEncryptCertificate) validatePutTimeoutsParameters(value *LetsEncryptCertificateTimeouts) error {
-	return nil
-}
-
 func validateLetsEncryptCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -73,10 +69,6 @@ func (j *jsiiProxy_LetsEncryptCertificate) validateSetAutoRenewParameters(val in
 }
 
 func (j *jsiiProxy_LetsEncryptCertificate) validateSetConnectionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_LetsEncryptCertificate) validateSetContactIdParameters(val *float64) error {
 	return nil
 }
 

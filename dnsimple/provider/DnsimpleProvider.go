@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/provider/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -55,12 +55,14 @@ type DnsimpleProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccount()
 	ResetAlias()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrefetch()
 	ResetSandbox()
+	ResetToken()
 	ResetUserAgent()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -487,6 +489,14 @@ func (d *jsiiProxy_DnsimpleProvider) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DnsimpleProvider) ResetAccount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccount",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DnsimpleProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		d,
@@ -515,6 +525,14 @@ func (d *jsiiProxy_DnsimpleProvider) ResetSandbox() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSandbox",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsimpleProvider) ResetToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetToken",
 		nil, // no parameters
 	)
 }

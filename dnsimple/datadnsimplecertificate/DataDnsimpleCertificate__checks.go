@@ -135,7 +135,7 @@ func validateDataDnsimpleCertificate_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(val *string) error {
+func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -144,14 +144,6 @@ func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(v
 }
 
 func (j *jsiiProxy_DataDnsimpleCertificate) validateSetDomainParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataDnsimpleCertificate) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

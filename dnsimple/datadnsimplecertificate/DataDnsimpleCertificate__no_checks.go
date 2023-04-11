@@ -64,15 +64,11 @@ func validateDataDnsimpleCertificate_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(val *string) error {
+func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(val *float64) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataDnsimpleCertificate) validateSetDomainParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataDnsimpleCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 

@@ -2,10 +2,10 @@ package emailforward
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/emailforward/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,9 +46,7 @@ type EmailForward interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Id() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -96,7 +94,6 @@ type EmailForward interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -265,21 +262,11 @@ func (j *jsiiProxy_EmailForward) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailForward) Id() *string {
-	var returns *string
+func (j *jsiiProxy_EmailForward) Id() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EmailForward) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -459,17 +446,6 @@ func (j *jsiiProxy_EmailForward)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_EmailForward)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -767,14 +743,6 @@ func (e *jsiiProxy_EmailForward) OverrideLogicalId(newLogicalId *string) {
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (e *jsiiProxy_EmailForward) ResetId() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -2,10 +2,10 @@ package datadnsimplecertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v3/datadnsimplecertificate/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/datadnsimplecertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,9 +15,9 @@ type DataDnsimpleCertificate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateChain() *[]*string
-	CertificateId() *string
-	SetCertificateId(val *string)
-	CertificateIdInput() *string
+	CertificateId() *float64
+	SetCertificateId(val *float64)
+	CertificateIdInput() *float64
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -40,8 +40,6 @@ type DataDnsimpleCertificate interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -88,7 +86,6 @@ type DataDnsimpleCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -127,8 +124,8 @@ func (j *jsiiProxy_DataDnsimpleCertificate) CertificateChain() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate) CertificateId() *string {
-	var returns *string
+func (j *jsiiProxy_DataDnsimpleCertificate) CertificateId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"certificateId",
@@ -137,8 +134,8 @@ func (j *jsiiProxy_DataDnsimpleCertificate) CertificateId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate) CertificateIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataDnsimpleCertificate) CertificateIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"certificateIdInput",
@@ -232,16 +229,6 @@ func (j *jsiiProxy_DataDnsimpleCertificate) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataDnsimpleCertificate) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -377,7 +364,7 @@ func NewDataDnsimpleCertificate_Override(d DataDnsimpleCertificate, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate)SetCertificateId(val *string) {
+func (j *jsiiProxy_DataDnsimpleCertificate)SetCertificateId(val *float64) {
 	if err := j.validateSetCertificateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,17 +406,6 @@ func (j *jsiiProxy_DataDnsimpleCertificate)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataDnsimpleCertificate)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -716,14 +692,6 @@ func (d *jsiiProxy_DataDnsimpleCertificate) OverrideLogicalId(newLogicalId *stri
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataDnsimpleCertificate) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 
