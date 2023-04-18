@@ -2,14 +2,14 @@ package datadnsimplecertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/datadnsimplecertificate/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/datadnsimplecertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate dnsimple_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/certificate dnsimple_certificate}.
 type DataDnsimpleCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataDnsimpleCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataDnsimpleCertificate) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDnsimpleCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataDnsimpleCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate dnsimple_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
 func NewDataDnsimpleCertificate(scope constructs.Construct, id *string, config *DataDnsimpleCertificateConfig) DataDnsimpleCertificate {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataDnsimpleCertificate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/d/certificate dnsimple_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
 func NewDataDnsimpleCertificate_Override(d DataDnsimpleCertificate, scope constructs.Construct, id *string, config *DataDnsimpleCertificateConfig) {
 	_init_.Initialize()
 
@@ -375,7 +375,10 @@ func (j *jsiiProxy_DataDnsimpleCertificate)SetCertificateId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataDnsimpleCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DataDnsimpleCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

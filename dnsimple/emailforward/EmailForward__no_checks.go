@@ -72,6 +72,10 @@ func (j *jsiiProxy_EmailForward) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_EmailForward) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmailForward) validateSetDestinationEmailParameters(val *string) error {
 	return nil
 }

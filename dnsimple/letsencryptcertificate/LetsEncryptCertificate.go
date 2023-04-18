@@ -2,14 +2,14 @@ package letsencryptcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/letsencryptcertificate/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/letsencryptcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
 type LetsEncryptCertificate interface {
 	cdktf.TerraformResource
 	AuthorityIdentifier() *string
@@ -25,9 +25,9 @@ type LetsEncryptCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	Csr() *string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_LetsEncryptCertificate) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LetsEncryptCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -443,7 +443,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) Years() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) LetsEncryptCertificate {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/r/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate_Override(l LetsEncryptCertificate, scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) {
 	_init_.Initialize()
 
@@ -494,7 +494,10 @@ func (j *jsiiProxy_LetsEncryptCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LetsEncryptCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_LetsEncryptCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

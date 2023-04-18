@@ -72,6 +72,10 @@ func (j *jsiiProxy_LetsEncryptCertificate) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_LetsEncryptCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LetsEncryptCertificate) validateSetDomainIdParameters(val *string) error {
 	return nil
 }

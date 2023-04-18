@@ -2,14 +2,14 @@ package emailforward
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/emailforward/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/emailforward/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward dnsimple_email_forward}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/email_forward dnsimple_email_forward}.
 type EmailForward interface {
 	cdktf.TerraformResource
 	AliasEmail() *string
@@ -25,9 +25,9 @@ type EmailForward interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_EmailForward) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_EmailForward) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmailForward) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -353,7 +353,7 @@ func (j *jsiiProxy_EmailForward) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward dnsimple_email_forward} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/email_forward dnsimple_email_forward} Resource.
 func NewEmailForward(scope constructs.Construct, id *string, config *EmailForwardConfig) EmailForward {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewEmailForward(scope constructs.Construct, id *string, config *EmailForwar
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/r/email_forward dnsimple_email_forward} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/email_forward dnsimple_email_forward} Resource.
 func NewEmailForward_Override(e EmailForward, scope constructs.Construct, id *string, config *EmailForwardConfig) {
 	_init_.Initialize()
 
@@ -404,7 +404,10 @@ func (j *jsiiProxy_EmailForward)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailForward)SetCount(val *float64) {
+func (j *jsiiProxy_EmailForward)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

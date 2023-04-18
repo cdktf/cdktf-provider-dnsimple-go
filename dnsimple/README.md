@@ -1,4 +1,4 @@
-# Terraform CDK dnsimple Provider ~> 0.13
+# Terraform CDK dnsimple Provider ~> 1.0
 
 This repo builds and publishes the Terraform dnsimple Provider bindings for [CDK for Terraform](https://cdk.tf).
 
@@ -54,7 +54,7 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform dnsimple Provider version 1:1. In fact, it always tracks `latest` of `~> 0.13` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform dnsimple Provider version 1:1. In fact, it always tracks `latest` of `~> 1.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 

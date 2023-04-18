@@ -2,14 +2,14 @@ package datadnsimplezone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v4/datadnsimplezone/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/datadnsimplezone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/dnsimple/d/zone dnsimple_zone}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone dnsimple_zone}.
 type DataDnsimpleZone interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -18,9 +18,9 @@ type DataDnsimpleZone interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataDnsimpleZone) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataDnsimpleZone) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataDnsimpleZone) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DataDnsimpleZone) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/d/zone dnsimple_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone dnsimple_zone} Data Source.
 func NewDataDnsimpleZone(scope constructs.Construct, id *string, config *DataDnsimpleZoneConfig) DataDnsimpleZone {
 	_init_.Initialize()
 
@@ -308,7 +308,7 @@ func NewDataDnsimpleZone(scope constructs.Construct, id *string, config *DataDns
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/dnsimple/d/zone dnsimple_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/data-sources/zone dnsimple_zone} Data Source.
 func NewDataDnsimpleZone_Override(d DataDnsimpleZone, scope constructs.Construct, id *string, config *DataDnsimpleZoneConfig) {
 	_init_.Initialize()
 
@@ -319,7 +319,10 @@ func NewDataDnsimpleZone_Override(d DataDnsimpleZone, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_DataDnsimpleZone)SetCount(val *float64) {
+func (j *jsiiProxy_DataDnsimpleZone)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCertificateIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataDnsimpleCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataDnsimpleCertificate) validateSetDomainParameters(val *string) error {
 	return nil
 }
