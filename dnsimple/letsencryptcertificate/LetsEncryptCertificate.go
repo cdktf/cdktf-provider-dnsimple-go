@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
 type LetsEncryptCertificate interface {
 	cdktf.TerraformResource
+	AlternateNames() *[]*string
+	SetAlternateNames(val *[]*string)
+	AlternateNamesInput() *[]*string
 	AuthorityIdentifier() *string
 	AutoRenew() interface{}
 	SetAutoRenew(val interface{})
@@ -103,6 +106,7 @@ type LetsEncryptCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAlternateNames()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -120,6 +124,26 @@ type LetsEncryptCertificate interface {
 // The jsii proxy struct for LetsEncryptCertificate
 type jsiiProxy_LetsEncryptCertificate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LetsEncryptCertificate) AlternateNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alternateNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LetsEncryptCertificate) AlternateNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alternateNamesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LetsEncryptCertificate) AuthorityIdentifier() *string {
@@ -443,7 +467,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) Years() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) LetsEncryptCertificate {
 	_init_.Initialize()
 
@@ -461,7 +485,7 @@ func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.0.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate_Override(l LetsEncryptCertificate, scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) {
 	_init_.Initialize()
 
@@ -469,6 +493,17 @@ func NewLetsEncryptCertificate_Override(l LetsEncryptCertificate, scope construc
 		"@cdktf/provider-dnsimple.letsEncryptCertificate.LetsEncryptCertificate",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LetsEncryptCertificate)SetAlternateNames(val *[]*string) {
+	if err := j.validateSetAlternateNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alternateNames",
+		val,
 	)
 }
 
@@ -847,6 +882,14 @@ func (l *jsiiProxy_LetsEncryptCertificate) OverrideLogicalId(newLogicalId *strin
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LetsEncryptCertificate) ResetAlternateNames() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAlternateNames",
+		nil, // no parameters
 	)
 }
 

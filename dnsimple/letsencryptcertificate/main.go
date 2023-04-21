@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*LetsEncryptCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNames", GoGetter: "AlternateNames"},
+			_jsii_.MemberProperty{JsiiProperty: "alternateNamesInput", GoGetter: "AlternateNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authorityIdentifier", GoGetter: "AuthorityIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRenew", GoGetter: "AutoRenew"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRenewInput", GoGetter: "AutoRenewInput"},
@@ -47,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlternateNames", GoMethod: "ResetAlternateNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignatureAlgorithm", GoMethod: "ResetSignatureAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "signatureAlgorithm", GoGetter: "SignatureAlgorithm"},

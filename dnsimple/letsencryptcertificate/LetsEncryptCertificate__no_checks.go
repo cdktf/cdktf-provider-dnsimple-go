@@ -64,6 +64,10 @@ func validateLetsEncryptCertificate_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LetsEncryptCertificate) validateSetAlternateNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LetsEncryptCertificate) validateSetAutoRenewParameters(val interface{}) error {
 	return nil
 }
