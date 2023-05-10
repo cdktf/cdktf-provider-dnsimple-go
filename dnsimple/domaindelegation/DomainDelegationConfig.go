@@ -19,9 +19,9 @@ type DomainDelegationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain_delegation#domain DomainDelegation#domain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain_delegation#domain DomainDelegation#domain}.
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
 	NameServers *[]*string `field:"required" json:"nameServers" yaml:"nameServers"`
 }
 
