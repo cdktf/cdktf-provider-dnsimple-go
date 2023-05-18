@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate}.
 type LetsEncryptCertificate interface {
 	cdktf.TerraformResource
 	AlternateNames() *[]*string
@@ -467,7 +467,7 @@ func (j *jsiiProxy_LetsEncryptCertificate) Years() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) LetsEncryptCertificate {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewLetsEncryptCertificate(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.1/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/lets_encrypt_certificate dnsimple_lets_encrypt_certificate} Resource.
 func NewLetsEncryptCertificate_Override(l LetsEncryptCertificate, scope constructs.Construct, id *string, config *LetsEncryptCertificateConfig) {
 	_init_.Initialize()
 
