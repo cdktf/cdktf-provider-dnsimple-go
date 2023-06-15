@@ -2,9 +2,9 @@ package registereddomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v5/registereddomain/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v6/registereddomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
