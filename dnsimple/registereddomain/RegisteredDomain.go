@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain dnsimple_registered_domain}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/registered_domain dnsimple_registered_domain}.
 type RegisteredDomain interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -86,6 +86,9 @@ type RegisteredDomain interface {
 	TerraformResourceType() *string
 	Timeouts() RegisteredDomainTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransferLockEnabled() interface{}
+	SetTransferLockEnabled(val interface{})
+	TransferLockEnabledInput() interface{}
 	UnicodeName() *string
 	WhoisPrivacyEnabled() interface{}
 	SetWhoisPrivacyEnabled(val interface{})
@@ -124,6 +127,7 @@ type RegisteredDomain interface {
 	ResetOverrideLogicalId()
 	ResetPremiumPrice()
 	ResetTimeouts()
+	ResetTransferLockEnabled()
 	ResetWhoisPrivacyEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -490,6 +494,26 @@ func (j *jsiiProxy_RegisteredDomain) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RegisteredDomain) TransferLockEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transferLockEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RegisteredDomain) TransferLockEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transferLockEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RegisteredDomain) UnicodeName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_RegisteredDomain) WhoisPrivacyEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain dnsimple_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/registered_domain dnsimple_registered_domain} Resource.
 func NewRegisteredDomain(scope constructs.Construct, id *string, config *RegisteredDomainConfig) RegisteredDomain {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewRegisteredDomain(scope constructs.Construct, id *string, config *Registe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/registered_domain dnsimple_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/registered_domain dnsimple_registered_domain} Resource.
 func NewRegisteredDomain_Override(r RegisteredDomain, scope constructs.Construct, id *string, config *RegisteredDomainConfig) {
 	_init_.Initialize()
 
@@ -680,6 +704,17 @@ func (j *jsiiProxy_RegisteredDomain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RegisteredDomain)SetTransferLockEnabled(val interface{}) {
+	if err := j.validateSetTransferLockEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transferLockEnabled",
 		val,
 	)
 }
@@ -1016,6 +1051,14 @@ func (r *jsiiProxy_RegisteredDomain) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RegisteredDomain) ResetTransferLockEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTransferLockEnabled",
 		nil, // no parameters
 	)
 }

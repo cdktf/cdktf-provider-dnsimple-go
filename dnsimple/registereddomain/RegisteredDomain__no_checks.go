@@ -111,6 +111,10 @@ func (j *jsiiProxy_RegisteredDomain) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_RegisteredDomain) validateSetTransferLockEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RegisteredDomain) validateSetWhoisPrivacyEnabledParameters(val interface{}) error {
 	return nil
 }

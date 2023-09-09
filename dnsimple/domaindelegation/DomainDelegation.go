@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain_delegation dnsimple_domain_delegation}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain_delegation dnsimple_domain_delegation}.
 type DomainDelegation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DomainDelegation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain_delegation dnsimple_domain_delegation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain_delegation dnsimple_domain_delegation} Resource.
 func NewDomainDelegation(scope constructs.Construct, id *string, config *DomainDelegationConfig) DomainDelegation {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDomainDelegation(scope constructs.Construct, id *string, config *DomainD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain_delegation dnsimple_domain_delegation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain_delegation dnsimple_domain_delegation} Resource.
 func NewDomainDelegation_Override(d DomainDelegation, scope constructs.Construct, id *string, config *DomainDelegationConfig) {
 	_init_.Initialize()
 

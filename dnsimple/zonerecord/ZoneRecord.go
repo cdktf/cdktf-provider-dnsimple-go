@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/zone_record dnsimple_zone_record}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record}.
 type ZoneRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_ZoneRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/zone_record dnsimple_zone_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record} Resource.
 func NewZoneRecord(scope constructs.Construct, id *string, config *ZoneRecordConfig) ZoneRecord {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewZoneRecord(scope constructs.Construct, id *string, config *ZoneRecordCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/zone_record dnsimple_zone_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record} Resource.
 func NewZoneRecord_Override(z ZoneRecord, scope constructs.Construct, id *string, config *ZoneRecordConfig) {
 	_init_.Initialize()
 

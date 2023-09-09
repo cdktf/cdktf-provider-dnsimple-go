@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs dnsimple}.
 type DnsimpleProvider interface {
 	cdktf.TerraformProvider
 	Account() *string
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DnsimpleProvider) UserAgentInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs dnsimple} Resource.
 func NewDnsimpleProvider(scope constructs.Construct, id *string, config *DnsimpleProviderConfig) DnsimpleProvider {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDnsimpleProvider(scope constructs.Construct, id *string, config *Dnsimpl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs dnsimple} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs dnsimple} Resource.
 func NewDnsimpleProvider_Override(d DnsimpleProvider, scope constructs.Construct, id *string, config *DnsimpleProviderConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain dnsimple_domain}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain dnsimple_domain}.
 type Domain interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -365,7 +365,7 @@ func (j *jsiiProxy_Domain) UnicodeName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain dnsimple_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain dnsimple_domain} Resource.
 func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Domain {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDomain(scope constructs.Construct, id *string, config *DomainConfig) Dom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.1.2/docs/resources/domain dnsimple_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/domain dnsimple_domain} Resource.
 func NewDomain_Override(d Domain, scope constructs.Construct, id *string, config *DomainConfig) {
 	_init_.Initialize()
 
