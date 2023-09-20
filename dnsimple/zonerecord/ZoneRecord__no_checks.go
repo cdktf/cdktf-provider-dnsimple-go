@@ -91,6 +91,10 @@ func (j *jsiiProxy_ZoneRecord) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_ZoneRecord) validateSetRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ZoneRecord) validateSetTtlParameters(val *float64) error {
 	return nil
 }

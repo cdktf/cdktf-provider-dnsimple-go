@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/zone_record dnsimple_zone_record}.
 type ZoneRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type ZoneRecord interface {
 	QualifiedName() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Regions() *[]*string
+	SetRegions(val *[]*string)
+	RegionsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +114,7 @@ type ZoneRecord interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetRegions()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -317,6 +321,26 @@ func (j *jsiiProxy_ZoneRecord) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ZoneRecord) Regions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ZoneRecord) RegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ZoneRecord) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -438,7 +462,7 @@ func (j *jsiiProxy_ZoneRecord) ZoneNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/zone_record dnsimple_zone_record} Resource.
 func NewZoneRecord(scope constructs.Construct, id *string, config *ZoneRecordConfig) ZoneRecord {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewZoneRecord(scope constructs.Construct, id *string, config *ZoneRecordCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.0/docs/resources/zone_record dnsimple_zone_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/zone_record dnsimple_zone_record} Resource.
 func NewZoneRecord_Override(z ZoneRecord, scope constructs.Construct, id *string, config *ZoneRecordConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_ZoneRecord)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ZoneRecord)SetRegions(val *[]*string) {
+	if err := j.validateSetRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regions",
 		val,
 	)
 }
@@ -879,6 +914,14 @@ func (z *jsiiProxy_ZoneRecord) ResetPriority() {
 	_jsii_.InvokeVoid(
 		z,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (z *jsiiProxy_ZoneRecord) ResetRegions() {
+	_jsii_.InvokeVoid(
+		z,
+		"resetRegions",
 		nil, // no parameters
 	)
 }
