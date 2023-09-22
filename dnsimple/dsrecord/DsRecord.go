@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/ds_record dnsimple_ds_record}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record dnsimple_ds_record}.
 type DsRecord interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DsRecord) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/ds_record dnsimple_ds_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record dnsimple_ds_record} Resource.
 func NewDsRecord(scope constructs.Construct, id *string, config *DsRecordConfig) DsRecord {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDsRecord(scope constructs.Construct, id *string, config *DsRecordConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.2.1/docs/resources/ds_record dnsimple_ds_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record dnsimple_ds_record} Resource.
 func NewDsRecord_Override(d DsRecord, scope constructs.Construct, id *string, config *DsRecordConfig) {
 	_init_.Initialize()
 
