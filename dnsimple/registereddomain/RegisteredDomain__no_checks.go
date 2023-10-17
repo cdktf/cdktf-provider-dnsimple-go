@@ -7,6 +7,10 @@ package registereddomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RegisteredDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegisteredDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RegisteredDomain) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RegisteredDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RegisteredDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RegisteredDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RegisteredDomain) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (r *jsiiProxy_RegisteredDomain) validatePutTimeoutsParameters(value *RegisteredDomainTimeouts) error {
+	return nil
+}
+
+func validateRegisteredDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

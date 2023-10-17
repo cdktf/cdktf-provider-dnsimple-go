@@ -15,6 +15,10 @@ func (d *jsiiProxy_DnsimpleProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateDnsimpleProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDnsimpleProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

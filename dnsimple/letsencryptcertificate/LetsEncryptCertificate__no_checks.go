@@ -7,6 +7,10 @@ package letsencryptcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LetsEncryptCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LetsEncryptCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LetsEncryptCertificate) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (l *jsiiProxy_LetsEncryptCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LetsEncryptCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LetsEncryptCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LetsEncryptCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLetsEncryptCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

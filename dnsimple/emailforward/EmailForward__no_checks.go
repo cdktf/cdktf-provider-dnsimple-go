@@ -7,6 +7,10 @@ package emailforward
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmailForward) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailForward) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EmailForward) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (e *jsiiProxy_EmailForward) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailForward) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmailForward) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmailForward) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmailForward_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

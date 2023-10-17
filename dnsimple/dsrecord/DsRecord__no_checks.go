@@ -7,6 +7,10 @@ package dsrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DsRecord) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DsRecord) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DsRecord) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (d *jsiiProxy_DsRecord) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DsRecord) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DsRecord) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DsRecord) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDsRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

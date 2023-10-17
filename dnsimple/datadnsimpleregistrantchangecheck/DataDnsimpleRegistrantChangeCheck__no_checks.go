@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheck) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataDnsimpleRegistrantChangeCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataDnsimpleRegistrantChangeCheck_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*Contact)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "address1", GoGetter: "Address1"},
 			_jsii_.MemberProperty{JsiiProperty: "address1Input", GoGetter: "Address1Input"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jobTitle", GoGetter: "JobTitle"},
 			_jsii_.MemberProperty{JsiiProperty: "jobTitleInput", GoGetter: "JobTitleInput"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastName", GoGetter: "LastName"},
 			_jsii_.MemberProperty{JsiiProperty: "lastNameInput", GoGetter: "LastNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "organizationName", GoGetter: "OrganizationName"},
 			_jsii_.MemberProperty{JsiiProperty: "organizationNameInput", GoGetter: "OrganizationNameInput"},
