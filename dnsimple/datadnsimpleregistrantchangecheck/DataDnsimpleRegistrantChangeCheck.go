@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/registrant_change_check dnsimple_registrant_change_check}.
 type DataDnsimpleRegistrantChangeCheck interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataDnsimpleRegistrantChangeCheck) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source.
 func NewDataDnsimpleRegistrantChangeCheck(scope constructs.Construct, id *string, config *DataDnsimpleRegistrantChangeCheckConfig) DataDnsimpleRegistrantChangeCheck {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataDnsimpleRegistrantChangeCheck(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/registrant_change_check dnsimple_registrant_change_check} Data Source.
 func NewDataDnsimpleRegistrantChangeCheck_Override(d DataDnsimpleRegistrantChangeCheck, scope constructs.Construct, id *string, config *DataDnsimpleRegistrantChangeCheckConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/registered_domain dnsimple_registered_domain}.
 type RegisteredDomain interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -564,7 +564,7 @@ func (j *jsiiProxy_RegisteredDomain) WhoisPrivacyEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/registered_domain dnsimple_registered_domain} Resource.
 func NewRegisteredDomain(scope constructs.Construct, id *string, config *RegisteredDomainConfig) RegisteredDomain {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewRegisteredDomain(scope constructs.Construct, id *string, config *Registe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/registered_domain dnsimple_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/registered_domain dnsimple_registered_domain} Resource.
 func NewRegisteredDomain_Override(r RegisteredDomain, scope constructs.Construct, id *string, config *RegisteredDomainConfig) {
 	_init_.Initialize()
 

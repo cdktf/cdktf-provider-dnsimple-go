@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone dnsimple_zone}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone dnsimple_zone}.
 type DataDnsimpleZone interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataDnsimpleZone) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone dnsimple_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone dnsimple_zone} Data Source.
 func NewDataDnsimpleZone(scope constructs.Construct, id *string, config *DataDnsimpleZoneConfig) DataDnsimpleZone {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataDnsimpleZone(scope constructs.Construct, id *string, config *DataDns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/data-sources/zone dnsimple_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/data-sources/zone dnsimple_zone} Data Source.
 func NewDataDnsimpleZone_Override(d DataDnsimpleZone, scope constructs.Construct, id *string, config *DataDnsimpleZoneConfig) {
 	_init_.Initialize()
 

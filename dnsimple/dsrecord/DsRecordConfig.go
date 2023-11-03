@@ -22,17 +22,17 @@ type DsRecordConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#algorithm DsRecord#algorithm}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#algorithm DsRecord#algorithm}.
 	Algorithm *string `field:"required" json:"algorithm" yaml:"algorithm"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#domain DsRecord#domain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#domain DsRecord#domain}.
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#digest DsRecord#digest}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#digest DsRecord#digest}.
 	Digest *string `field:"optional" json:"digest" yaml:"digest"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#digest_type DsRecord#digest_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#digest_type DsRecord#digest_type}.
 	DigestType *string `field:"optional" json:"digestType" yaml:"digestType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#keytag DsRecord#keytag}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#keytag DsRecord#keytag}.
 	Keytag *string `field:"optional" json:"keytag" yaml:"keytag"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.0/docs/resources/ds_record#public_key DsRecord#public_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.3.1/docs/resources/ds_record#public_key DsRecord#public_key}.
 	PublicKey *string `field:"optional" json:"publicKey" yaml:"publicKey"`
 }
 
