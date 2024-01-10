@@ -5,10 +5,10 @@ package zonerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v8/zonerecord/internal"
+	"github.com/cdktf/cdktf-provider-dnsimple-go/dnsimple/v9/zonerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -110,12 +110,22 @@ type ZoneRecord interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -126,6 +136,9 @@ type ZoneRecord interface {
 	ResetRegions()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -924,6 +937,19 @@ func (z *jsiiProxy_ZoneRecord) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (z *jsiiProxy_ZoneRecord) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (z *jsiiProxy_ZoneRecord) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := z.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -951,6 +977,17 @@ func (z *jsiiProxy_ZoneRecord) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (z *jsiiProxy_ZoneRecord) MoveFromId(id *string) {
+	if err := z.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (z *jsiiProxy_ZoneRecord) MoveTo(moveTarget *string, index interface{}) {
 	if err := z.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -959,6 +996,17 @@ func (z *jsiiProxy_ZoneRecord) MoveTo(moveTarget *string, index interface{}) {
 		z,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (z *jsiiProxy_ZoneRecord) MoveToId(id *string) {
+	if err := z.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		z,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1011,6 +1059,32 @@ func (z *jsiiProxy_ZoneRecord) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		z,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneRecord) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		z,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (z *jsiiProxy_ZoneRecord) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		z,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

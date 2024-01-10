@@ -59,7 +59,15 @@ func (l *jsiiProxy_LetsEncryptCertificate) validateInterpolationForAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LetsEncryptCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LetsEncryptCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LetsEncryptCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
