@@ -1,13 +1,13 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package domaindelegation
+package zone
 
 import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DomainDelegationConfig struct {
+type ZoneConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
@@ -22,9 +22,9 @@ type DomainDelegationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/domain_delegation#domain DomainDelegation#domain}.
-	Domain *string `field:"required" json:"domain" yaml:"domain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/domain_delegation#name_servers DomainDelegation#name_servers}.
-	NameServers *[]*string `field:"required" json:"nameServers" yaml:"nameServers"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone#name Zone#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone#active Zone#active}.
+	Active interface{} `field:"optional" json:"active" yaml:"active"`
 }
 
