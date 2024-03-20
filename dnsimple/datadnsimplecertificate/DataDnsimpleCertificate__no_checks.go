@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataDnsimpleCertificate) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataDnsimpleCertificate) validatePutTimeoutsParameters(value *DataDnsimpleCertificateTimeouts) error {
+	return nil
+}
+
 func validateDataDnsimpleCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate dnsimple_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate dnsimple_certificate}.
 type DataDnsimpleCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -64,6 +64,8 @@ type DataDnsimpleCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DataDnsimpleCertificateTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,9 +91,11 @@ type DataDnsimpleCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DataDnsimpleCertificateTimeouts)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -341,8 +345,28 @@ func (j *jsiiProxy_DataDnsimpleCertificate) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataDnsimpleCertificate) Timeouts() DataDnsimpleCertificateTimeoutsOutputReference {
+	var returns DataDnsimpleCertificateTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
+func (j *jsiiProxy_DataDnsimpleCertificate) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
 func NewDataDnsimpleCertificate(scope constructs.Construct, id *string, config *DataDnsimpleCertificateConfig) DataDnsimpleCertificate {
 	_init_.Initialize()
 
@@ -360,7 +384,7 @@ func NewDataDnsimpleCertificate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate dnsimple_certificate} Data Source.
 func NewDataDnsimpleCertificate_Override(d DataDnsimpleCertificate, scope constructs.Construct, id *string, config *DataDnsimpleCertificateConfig) {
 	_init_.Initialize()
 
@@ -724,10 +748,29 @@ func (d *jsiiProxy_DataDnsimpleCertificate) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (d *jsiiProxy_DataDnsimpleCertificate) PutTimeouts(value *DataDnsimpleCertificateTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataDnsimpleCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataDnsimpleCertificate) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

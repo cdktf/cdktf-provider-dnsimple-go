@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone dnsimple_zone}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/zone dnsimple_zone}.
 type Zone interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -388,7 +388,7 @@ func (j *jsiiProxy_Zone) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone dnsimple_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/zone dnsimple_zone} Resource.
 func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewZone(scope constructs.Construct, id *string, config *ZoneConfig) Zone {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/resources/zone dnsimple_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/zone dnsimple_zone} Resource.
 func NewZone_Override(z Zone, scope constructs.Construct, id *string, config *ZoneConfig) {
 	_init_.Initialize()
 

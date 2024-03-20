@@ -24,11 +24,15 @@ type DataDnsimpleCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Certificate ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#certificate_id DataDnsimpleCertificate#certificate_id}
 	CertificateId *float64 `field:"required" json:"certificateId" yaml:"certificateId"`
 	// Domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.4.0/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#domain DataDnsimpleCertificate#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/certificate#timeouts DataDnsimpleCertificate#timeouts}
+	Timeouts *DataDnsimpleCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
