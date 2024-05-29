@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/email_forward dnsimple_email_forward}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/email_forward dnsimple_email_forward}.
 type EmailForward interface {
 	cdktf.TerraformResource
 	AliasEmail() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_EmailForward) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/email_forward dnsimple_email_forward} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/email_forward dnsimple_email_forward} Resource.
 func NewEmailForward(scope constructs.Construct, id *string, config *EmailForwardConfig) EmailForward {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewEmailForward(scope constructs.Construct, id *string, config *EmailForwar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/resources/email_forward dnsimple_email_forward} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/resources/email_forward dnsimple_email_forward} Resource.
 func NewEmailForward_Override(e EmailForward, scope constructs.Construct, id *string, config *EmailForwardConfig) {
 	_init_.Initialize()
 

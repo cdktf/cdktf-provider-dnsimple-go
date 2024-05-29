@@ -24,7 +24,7 @@ type DataDnsimpleZoneConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Zone Name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.5.0/docs/data-sources/zone#name DataDnsimpleZone#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/zone#name DataDnsimpleZone#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
