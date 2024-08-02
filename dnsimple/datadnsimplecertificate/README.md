@@ -1,3 +1,3 @@
 # `data_dnsimple_certificate`
 
-Refer to the Terraform Registry for docs: [`data_dnsimple_certificate`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.6.0/docs/data-sources/certificate).
+Refer to the Terraform Registry for docs: [`data_dnsimple_certificate`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/data-sources/certificate).
