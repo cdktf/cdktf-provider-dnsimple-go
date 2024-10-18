@@ -1,3 +1,3 @@
 # `dnsimple_contact`
 
-Refer to the Terraform Registry for docs: [`dnsimple_contact`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs/resources/contact).
+Refer to the Terraform Registry for docs: [`dnsimple_contact`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/contact).

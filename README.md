@@ -1,6 +1,6 @@
-# CDKTF Go bindings for dnsimple/dnsimple provider version 1.7.0
+# CDKTF Go bindings for dnsimple/dnsimple provider version 1.8.0
 
-This repo builds and publishes the [Terraform dnsimple provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform dnsimple provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform dnsimple provider version 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform dnsimple provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.7.0)
+* [Terraform dnsimple provider](https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
