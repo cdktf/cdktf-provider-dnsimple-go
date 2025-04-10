@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/contact dnsimple_contact}.
+// Represents a {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/contact dnsimple_contact}.
 type Contact interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -679,7 +679,7 @@ func (j *jsiiProxy_Contact) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/contact dnsimple_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/contact dnsimple_contact} Resource.
 func NewContact(scope constructs.Construct, id *string, config *ContactConfig) Contact {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewContact(scope constructs.Construct, id *string, config *ContactConfig) C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.8.0/docs/resources/contact dnsimple_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/contact dnsimple_contact} Resource.
 func NewContact_Override(c Contact, scope constructs.Construct, id *string, config *ContactConfig) {
 	_init_.Initialize()
 
