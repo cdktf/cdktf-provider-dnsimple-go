@@ -1,3 +1,3 @@
 # `dnsimple_domain_delegation`
 
-Refer to the Terraform Registry for docs: [`dnsimple_domain_delegation`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/domain_delegation).
+Refer to the Terraform Registry for docs: [`dnsimple_domain_delegation`](https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/domain_delegation).

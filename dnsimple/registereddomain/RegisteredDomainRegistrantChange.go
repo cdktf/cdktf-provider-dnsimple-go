@@ -7,7 +7,7 @@ package registereddomain
 type RegisteredDomainRegistrantChange struct {
 	// State of the registrant change.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.0/docs/resources/registered_domain#state RegisteredDomain#state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/dnsimple/dnsimple/1.9.1/docs/resources/registered_domain#state RegisteredDomain#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 
