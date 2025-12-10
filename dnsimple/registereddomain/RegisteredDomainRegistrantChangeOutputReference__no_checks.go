@@ -43,11 +43,11 @@ func (r *jsiiProxy_RegisteredDomainRegistrantChangeOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_RegisteredDomainRegistrantChangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RegisteredDomainRegistrantChangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RegisteredDomainRegistrantChangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RegisteredDomainRegistrantChangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

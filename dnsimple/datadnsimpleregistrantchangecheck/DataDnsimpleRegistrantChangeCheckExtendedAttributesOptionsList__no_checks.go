@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsLis
 	return nil
 }
 
-func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

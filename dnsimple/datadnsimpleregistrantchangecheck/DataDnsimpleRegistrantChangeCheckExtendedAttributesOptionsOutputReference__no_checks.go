@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOut
 	return nil
 }
 
-func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataDnsimpleRegistrantChangeCheckExtendedAttributesOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
